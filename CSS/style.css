@@ -70,7 +70,7 @@ img {
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -147,17 +147,18 @@ img {
     content: '';
 }
 
-@media (max-widht: 1200px) {
-    .address {
-        flex-direction: column;
-        gap: 12px;
-    }
-}
 
 .address {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+@media (max-width: 1200px) {
+    .address {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 
