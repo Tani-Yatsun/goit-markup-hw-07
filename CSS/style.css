@@ -70,7 +70,7 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1158px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -148,18 +148,32 @@ img {
 }
 
 
-.address {
+.address-box {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
 @media (max-width: 1200px) {
-    .address {
-        flex-direction: column;
-        gap: 12px;
+    .address-box {
+        flex-direction: row;
     }
 }
+
+@media (max-width: 768px) {
+    .address-box {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 0 16px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-link {
+        padding: 0;
+    }
+}
+
 
 
 .address-link {
