@@ -55,6 +55,13 @@ img {
     padding-top: 120px;
 }
 
+@media (max-width: 768px) {
+    .section-title {
+        padding-bottom: 96px;
+        padding-top: 96px;
+    }
+}
+
 .section-team {
     padding-bottom: 120px;
     padding-top: 120px;
@@ -216,6 +223,12 @@ img {
     color: var(--color-brand);
 }
 
+@media (min-width: 480px) {
+    .burger {
+        display: none;
+    }
+}
+
 
 .header-container {
     display: flex;
@@ -252,7 +265,9 @@ img {
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-align: center;
-        padding: 112px 54px 0 54px;
+        padding-left: 54px;
+        padding-right: 54px;
+        margin-bottom: 72px;
     }
 }
 
@@ -268,11 +283,15 @@ img {
     background-repeat: no-repeat;
     background-position: center;
 
-
-
 }
 
+@media(max-width: 480px) {
+    .hero {
+        padding-top: 121px;
+        padding-bottom: 121px;
+    }
 
+}
 
 .orderbut {
     color: var(--color-withlight);
@@ -310,6 +329,16 @@ img {
 
 }
 
+@media(max-width: 768px) {
+    .title-name {
+        text-align: center;
+        font-size: 36px;
+        line-height: 1.111;
+        letter-spacing: 0.002em;
+    }
+}
+
+
 .title-about {
     font-size: 16px;
     line-height: 1.5;
@@ -325,6 +354,24 @@ img {
 
 }
 
+@media (max-width: 768px) {
+    .title-container {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:768px) {
+    .title-container {
+        gap: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .title-row {
+        flex-basis: calc((100% - 1 * 24px) / 2);
+    }
+}
+
 .title-box {
     width: 264px;
     height: 112px;
@@ -334,6 +381,12 @@ img {
     align-items: center;
     border-radius: 4px;
     margin-bottom: 8px;
+}
+
+@media (max-width: 1200px) {
+    .title-box {
+        display: none;
+    }
 }
 
 .title.row:not(:last-child) {
@@ -356,6 +409,12 @@ img {
     color: var(--color-primery);
     text-align: center;
     margin-bottom: 72px;
+}
+
+@media (max-width:1200px) {
+    .photo {
+        display: none;
+    }
 }
 
 .photo-title {
