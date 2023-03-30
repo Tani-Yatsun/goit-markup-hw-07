@@ -615,6 +615,13 @@ img {
     padding-bottom: 100px;
 }
 
+@media (max-width: 768px) {
+    .foot {
+        padding-left: 108px;
+    }
+
+}
+
 .foter-item {
     margin-top: 16px;
     width: 264px;
@@ -659,6 +666,7 @@ img {
     .footer {
         flex-direction: column;
         align-items: center;
+        text-align: left;
     }
 }
 
@@ -1197,7 +1205,7 @@ img {
     margin-right: 0;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 480px) {
     .footer-block {
         display: flex;
         flex-direction: column;
@@ -1254,6 +1262,13 @@ img {
 .footer-part {
     display: flex;
 
+}
+
+@media(max-width: 768px) {
+    .footer-part {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer-icon {
