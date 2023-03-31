@@ -268,6 +268,16 @@ img {
     flex-grow: 1;
 }
 
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 428px;
+    background-color: var(--color-withlight);
+    transform: translateX(100%);
+}
 
 /*hero section*/
 
