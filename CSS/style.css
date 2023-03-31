@@ -246,6 +246,7 @@ img {
     color: var(--color-brand);
 }
 
+
 @media (min-width: 480px) {
     .burger {
         display: none;
@@ -291,12 +292,17 @@ img {
     transform: translateX(0);
 }
 
+.js-open-menu {
+    background-color: var(--color-withlight);
+    border: none;
+}
+
 .js-close-menu {
     border-radius: 50%;
     position: absolute;
     top: 24px;
     right: 24px;
-
+    border-color: var(--color-secondlight);
 }
 
 .mobail.menu {
