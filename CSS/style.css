@@ -268,16 +268,69 @@ img {
     flex-grow: 1;
 }
 
+/*mobile menu*/
+
+
 .menu {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    width: 100%;
-    max-width: 428px;
+    width: 428px;
+    height: 796px;
     background-color: var(--color-withlight);
     transform: translateX(100%);
+    transition: 1s;
+    padding: 80px 0 40px 40px;
+
+
 }
+
+.menu.is-open {
+    transform: translateX(0);
+}
+
+.js-close-menu {
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+}
+
+.mobail.menu {
+    position: relative;
+}
+
+
+.modal-icon {}
+
+.mobile-link {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.002em;
+    text-decoration: none;
+    color: var(--color-primery);
+
+
+}
+
+.mobile-link.ocean {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.002em;
+    text-decoration: none;
+    color: var(--color-pressed);
+
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+
 
 /*hero section*/
 
