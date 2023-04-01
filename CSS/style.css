@@ -41,14 +41,17 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-/* li { 
+li {
     list-style: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
-}*/
+}
 
 .section-title {
     padding-bottom: 120px;
@@ -69,10 +72,12 @@ img {
     padding-top: 120px;
 }
 
-@media (max-width: 768px) {
+
+@media (min-width: 768px) {
     .section-team {
         padding-bottom: 96px;
         padding-top: 96px;
+        width: 582px;
     }
 }
 
@@ -209,13 +214,13 @@ img {
     gap: 40px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     .address-box {
         flex-direction: row;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 480px) {
     .address-box {
         flex-direction: column;
         gap: 12px;
@@ -295,6 +300,7 @@ img {
 .js-open-menu {
     background-color: var(--color-withlight);
     border: none;
+    color: var(--color-primery);
 }
 
 .js-close-menu {
@@ -668,11 +674,24 @@ img {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .team-photo {
-        flex-basis: calc((100% - 1 * 24px) / 2);
+        flex-basis: 100%;
     }
 }
+
+@media (min-width: 768px) {
+    .team-photo {
+        flex-basis: calc((100% - 1 * 24px) /2);
+    }
+}
+
+@media (min-width: 1200px) {
+    .team-photo {
+        flex-basis: calc((100% - 3 * 24px) /4);
+    }
+}
+
 
 
 /*social*/
@@ -729,7 +748,8 @@ img {
 
 @media (max-width: 768px) {
     .foot {
-        padding-left: 108px;
+        padding-top: 98px;
+        padding-bottom: 96px;
     }
 
 }
@@ -742,6 +762,13 @@ img {
     letter-spacing: 0.02em;
     color: var(--color-secondlight);
 
+}
+
+@media(max-width: 768px) {
+    .footer-item {
+        margin-top: 18px;
+
+    }
 }
 
 
@@ -758,6 +785,14 @@ img {
 
 }
 
+@media(max-width: 768px) {
+    .footer-logo {
+        text-align: center;
+    }
+}
+
+
+
 .footer-name {
     color: var(--color-brand);
     text-transform: uppercase;
@@ -765,6 +800,12 @@ img {
     font-weight: 800;
     letter-spacing: 0.03em;
     line-height: 1.174;
+}
+
+@media(max-width: 768px) {
+    .footer-name {
+        text-align: center;
+    }
 }
 
 .footer {
@@ -779,6 +820,8 @@ img {
         flex-direction: column;
         align-items: center;
         text-align: left;
+        gap: 72px;
+
     }
 }
 
@@ -786,8 +829,27 @@ img {
     margin-right: 120px;
 }
 
+@media(max-width: 768px) {
+    .logo-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
 .footer-sub {
     margin-right: 80px;
+}
+
+@media(max-width: 768px) {
+    .footer-sub {
+        margin: 0;
+        padding-left: 110px;
+        padding-right: 110px;
+    }
 }
 
 .footer-social-item {
@@ -797,6 +859,13 @@ img {
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 
+}
+
+@media(max-width: 768px) {
+    .footer-social-item {
+        margin-bottom: 16px;
+        text-align: center;
+    }
 }
 
 .footer-social-row {
@@ -818,6 +887,14 @@ img {
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media(max-width: 768px) {
+    .footer-social-link {
+        background-color: var(--color-brand);
+    }
+
+}
+
 
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -1020,10 +1097,18 @@ img {
     }
 }
 
-.servises-photo {
-    flex-basis: calc((100% - 2 * 24px) / 3);
+
+@media(min-width: 1200px) {
+    .servises-photo {
+        flex-basis: calc((100% - 2 * 24px) / 3);
+    }
+}
 
 
+@media(min-width: 480px) {
+    .section-photo {
+        flex-basis: calc((100% - 1 * 24px) / 2);
+    }
 }
 
 /*overlay*/
@@ -1125,6 +1210,13 @@ img {
     border-radius: 4px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media(max-width:768px) {
+    .modal {
+        width: 392px;
+    }
+}
+
 
 .modal-close {
     position: absolute;
@@ -1333,6 +1425,13 @@ img {
     margin-bottom: 16px;
 }
 
+@media(max-width: 768px) {
+    .footer-subscribe {
+        margin-top: 16px;
+        text-align: center;
+    }
+}
+
 .footer-input {
 
     background-color: transparent;
@@ -1344,6 +1443,14 @@ img {
     padding-bottom: 8px;
     padding-left: 16px;
     color: var(--color-firstlight);
+}
+
+@media (max-width: 768px) {
+    .footer-input {
+        width: 398px;
+        max-width: 398px;
+        margin-bottom: 16px;
+    }
 }
 
 
