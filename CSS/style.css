@@ -108,10 +108,12 @@ li {
 
 }
 
-.team-container {
-    max-width: 264px;
-    width: 100%;
-    margin: 0 auto;
+@media(max-width:767px) {
+    .team-container {
+        max-width: 264px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media(min-width: 768px) {
@@ -131,12 +133,12 @@ li {
 }
 
 
-
 .servises-container {
     max-width: 396px;
     width: 100%;
     margin: 0 auto;
 }
+
 
 @media(min-width: 768px) {
     .servises-container {
@@ -975,7 +977,12 @@ li {
 }
 
 /*servises section*/
-
+.servises {
+    margin-top: 72px;
+    display: flex;
+    gap: 48px 24px;
+    flex-wrap: wrap;
+}
 
 @media (max-width: 767px) {
     .servises {
@@ -1366,6 +1373,14 @@ li {
     align-items: baseline;
 }
 
+@media(min-width: 768px) {
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
 .logo-box {
     margin-right: 120px;
 }
@@ -1482,3 +1497,4 @@ li {
     top: 0%;
     right: 0%;
     fill: var(--color-firstlight);
+}
