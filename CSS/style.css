@@ -66,7 +66,6 @@ li {
     }
 }
 
-
 .section-team {
     background-color: var(--color-firstlight);
     width: 100%;
@@ -132,6 +131,8 @@ li {
     }
 }
 
+
+.section-customers .container {}
 
 .servises-container {
     max-width: 396px;
@@ -684,6 +685,10 @@ li {
 
 }
 
+.photo {
+    padding-bottom: 120px;
+}
+
 /*team section*/
 
 /*
@@ -723,13 +728,14 @@ li {
 }
 
 
-@media(max-width: 479px) {
+@media(max-width: 767px) {
     .team-class {
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px;
+        max-width: 264px;
     }
 }
 
@@ -739,6 +745,7 @@ li {
         flex-wrap: wrap;
         row-gap: 64px;
         column-gap: 24px;
+        display: flex;
     }
 }
 
@@ -948,6 +955,13 @@ li {
     width: 168px;
     height: 88px;
 }
+
+@media (max-width: 767px) {
+    .customers-row {
+        flex-basis: calc((100% - 1 * 24px) / 2);
+    }
+}
+
 
 
 .customers-link {
