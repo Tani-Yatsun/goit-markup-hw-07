@@ -1380,6 +1380,13 @@ li {
     justify-content: center;
     align-items: baseline;
 }*/
+@media(min-width: 1200px) {
+    .foot .container {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
 
 @media(min-width: 768px) {
     .foot .container {
@@ -1396,7 +1403,7 @@ li {
 
 @media(min-width: 768px) {
     .logo-box {
-        margin: 0 auto;
+        margin: 0;
     }
 }
 
@@ -1406,7 +1413,7 @@ li {
 
 @media(min-width: 768px) {
     .footer.sub {
-        margin: 0 auto;
+        margin: 0;
     }
 }
 
