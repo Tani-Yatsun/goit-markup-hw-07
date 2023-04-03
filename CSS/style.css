@@ -1394,8 +1394,20 @@ li {
     margin-right: 120px;
 }
 
+@media(min-width: 768px) {
+    .logo-box {
+        margin: 0 auto;
+    }
+}
+
 .footer-sub {
     margin-right: 80px;
+}
+
+@media(min-width: 768px) {
+    .footer.sub {
+        margin: 0 auto;
+    }
 }
 
 .footer-social-item {
