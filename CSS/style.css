@@ -132,7 +132,7 @@ li {
 }
 
 
-.section-customers .container {}
+
 
 .servises-container {
     max-width: 396px;
@@ -939,27 +939,20 @@ li {
     flex-wrap: wrap;
 }
 
-
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .customers-box {
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
+        margin: 0 auto;
     }
 }
-
 
 
 .customers-row {
     width: 168px;
     height: 88px;
-}
-
-@media (max-width: 767px) {
-    .customers-row {
-        flex-basis: calc((100% - 1 * 24px) / 2);
-    }
 }
 
 
