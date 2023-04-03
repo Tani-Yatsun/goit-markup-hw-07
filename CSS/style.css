@@ -1385,10 +1385,12 @@ li {
         display: flex;
         justify-content: center;
         align-items: baseline;
+        flex-wrap: nowrap;
+
     }
 }
 
-@media(min-width: 768px) {
+@media(max-width: 1199px) {
     .foot .container {
         max-width: 565px;
         display: flex;
@@ -1401,7 +1403,7 @@ li {
     margin-right: 120px;
 }
 
-@media(min-width: 768px) {
+@media(max-width: 1119px) {
     .logo-box {
         margin: 0;
     }
