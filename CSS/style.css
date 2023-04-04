@@ -383,12 +383,12 @@ li {
 .mobile-link {
     text-decoration: none;
     color: var(--color-primery);
+    font-weight: bold;
 }
 
 .mobile-link.ocean {
     text-decoration: none;
     color: var(--color-pressed);
-    font-weight: bold;
 }
 
 
@@ -1213,6 +1213,12 @@ li {
     }
 }
 
+@media(min-width: 768px) {
+    .modal {
+        width: 408px;
+    }
+}
+
 
 .modal-close {
     position: absolute;
@@ -1484,6 +1490,7 @@ li {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 0;
     }
 }
 
@@ -1495,6 +1502,9 @@ li {
 @media(max-width: 767px) {
     .footer-sub {
         margin: 0;
+        margin-top: 72px;
+        margin-bottom: 72px;
+
 
     }
 }
