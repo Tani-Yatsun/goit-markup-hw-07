@@ -382,7 +382,13 @@ li {
 
 .mobile-link {
     text-decoration: none;
-    color: var(--color-brand);
+    color: var(--color-primery);
+}
+
+.mobile-link.ocean {
+    text-decoration: none;
+    color: var(--color-pressed);
+    font-weight: bold;
 }
 
 
@@ -938,7 +944,7 @@ li {
 @media(min-width: 768px) {
     .section-rows {
         padding-top: 64px;
-        padding-bottom: 196px;
+        padding-bottom: 96px;
     }
 }
 
@@ -1466,7 +1472,7 @@ li {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
     }
 }
 
@@ -1611,8 +1617,8 @@ li {
 
 @media(max-width: 767px) {
     .footer-input {
-        max-width: 398px;
-        width: 100%;
+        width: 398px;
+
     }
 }
 
